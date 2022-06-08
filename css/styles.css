@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, .menu__link, .menu__link--deshabilitado,
+.producto__nombre--heladera, .producto__nombre--lavarropas {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 1.875rem;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    height: 6.75rem;
+}
+
+.contenedor__link {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.logo {
+    height: 6.875rem;
+    width: 6.25rem;
+    padding-bottom: .625rem;
+}
+
+.nombre-empresa {
+    font-size: 2.625rem;
+    position: relative;
+    bottom: 1.5625rem;
+}
+
+nav {
+    background-color: crimson;
+    display: flex;
+    height: 2.875rem;
+    justify-content: end;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: .75rem;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    margin: .8125rem;
+    font-size: 1.10rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link--deshabilitado {
+    margin: .8125rem;
+    font-size: 1.10rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/*CSS Home*/
+.parallax {
+    background-image: url("../img/imagen_parallax.webp");
+    height: 40rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info {
+    border-top: 2.65rem solid midnightblue;
+    padding-top: 1.25rem;
+    display: grid;
+    grid-template-areas: 
+    "info__titulo"
+    "info__informacion"
+    "info__solucion"
+    "info__garantia";
+    grid-template-rows: 3.125rem 1fr 1fr 1fr;
+}
+
+#info h2 {
+    margin: .75rem;
+    display: flex;
+}
+
+.articulo {
+    margin: 3.25rem 1.25rem;
+    height: 6.75rem;
+}
+
+.articulo h3, .articulo p {
+    margin: .625rem;
+}
+
+.articulo p {
+    margin: 2.25rem 2.5rem;
+}
+
+.titulo {
+    grid-area: info__titulo;
+}
+
+.informacion {
+    grid-area: info__informacion;
+}
+
+.solucion {
+    grid-area: info__solucion;
+}
+
+.garantia {
+    grid-area: info__garantia;
+}
+
+/*CSS Tienda*/
+#tienda {
+    margin: .75rem;
+}
+
+.tienda {
+    margin: 1.25rem;
+}
+
+.tienda__subtitulo {
+    padding: .625rem 0;
+
+}
+
+.producto {
+    display: inline-block;
+    margin: 1.875rem;
+    padding: 0 3.75rem;
+}
+
+.producto__nombre--heladera {
+    margin: .3125rem;
+    font-weight: bold;
+}
+
+.producto__nombre--lavarropas {
+    width: 18.5rem;
+    margin: .3125rem;
+    font-weight: bold;
+}
+
+.producto__precio {
+    margin: .3125rem;
+}
+
+.btn--producto {
+    font-size: 1.25rem;
+    padding: 0 1.25rem;
+    margin: .3125rem;
+    border-radius: .9375rem;
+    border: .125rem solid midnightblue;
+}
+
+.btn--producto:hover {
+    background-color: midnightblue;
+    color: white;
+}
+
+/*CSS Nosotros*/
+
+#historia {
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia__titulo {
+    padding: .625rem 0;
+    margin-bottom: .625rem;
+}
+
+.historia__texto {
+    margin: 1.25rem;
+    padding-left: .625rem;
+}
+
+.talleres__titulo {
+    padding: .625rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.talleres__imagenes {
+    display: grid;
+    grid-template-areas: 
+    "santa-fe colon";
+    grid-template-columns: 1fr 1fr;
+}
+
+.santa-fe {
+    grid-area: santa-fe;
+}
+
+.colon {
+    grid-area: colon;
+}
+
+#talleres .taller {
+    margin: .625rem;
+}
+
+.taller__direc {
+    margin-bottom: .625rem;
+    padding-left: .625rem;
+}
+
+.taller__img {
+    margin-left: .625rem;
+    padding: .3125rem;
+    height: 25.625rem;
+    width: 100%;
+}
+
+/*CSS contacto y aplique*/
+#contacto, #aplicar {
+    margin: 1.25rem;
+    background-color: #b13b527a;
+    border: .3125rem solid;
+    border-style: inset;
+}
+
+.contacto__titulo {
+    padding: .625rem 0;
+    margin-bottom: .625rem;
+    margin-left: 42.6875rem;
+    
+}
+
+.contacto__subtitulo {
+    padding:0 0 .625rem .625rem;
+    margin-left: 31.1875rem;
+}
+
+.aplicar__titulo {
+    padding: .625rem 0;
+    margin-bottom: .625rem;
+    margin-left: 33.4375rem;
+    
+}
+
+.aplicar__subtitulo {
+    padding:0 0 .625rem .625rem;
+    margin-left: 38.75rem;
+}
+
+/*CSS formulario*/
+.formulario {
+    margin: .625rem 1.25rem;
+}
+
+.formulario p {
+    margin: .3125rem 0;
+}
+
+.formulario__casilla {
+    position: relative;
+    bottom: .125rem;
+    font-size: .9375rem;
+}
+
+.formulario__label {
+    display: inline-block;
+    padding: .625rem 0;
+}
+
+.formulario__radio, .formulario__checkbox {
+    margin-left: 1.25rem;
+}
+
+.formulario__label--radio {
+    display: inline-block;
+    padding: .1875rem 0;
+}
+
+.formulario__label--checkbox {
+    display: inline-block;
+    padding: .3125rem 0;
+}
+
+.formulario__marca {
+    font-size: .9375rem;
+}
+
+.formulario__descripcion {
+    margin: .3125rem 0;
+    margin-left: 1.875rem;
+}
+
+.formulario__btn {
+    padding: .3125rem;
+    margin-left: 36.875rem;
+}
+
+.btn {
+    font-size: 1.25rem;
+    padding: 0 1.25rem;
+    border-radius: .9375rem;
+    border: .125rem solid midnightblue;
+    margin: 0 1.5625rem;
+}
+
+.btn:hover {
+    background-color: midnightblue;
+    color: white;
+}
+
+/*CSS footer*/
+
+.footer {
+    height: 12.4375rem;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    width: 33.3%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__container p {
+    margin-left: 1rem;
+}
+
+.footer__container--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer__copyright, .footer__mail, .footer__telefono {
+    color: white;
+    font-size: 1rem;
+}
+
+.footer__telefono, .footer__mail {
+    margin: .375rem;
+}
+
+.footer__mail a {
+    color: white;
+}
+
+.footer__icono {
+    margin: .3125rem;
+}
+
+/*CCS Home 1024px*/
+@media screen and (max-width: 1024px) {
+    /*General*/
+    .logo {
+        height: 6.875rem;
+        width: 6.25rem;
+        padding-bottom: .625rem;
+    }
+    /*Home*/
+    #info h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articulo {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .articulo p {
+        margin: 0.25rem 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    /*General*/
+    header .contenedor {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    /*Home*/
+    .articulo {
+        align-items: center;
+    }
+    /*Nosotros*/
+    .taller__direc {
+        font-size: .9375rem;
+    }
+
+    .taller__img {
+        width: 85%;
+        height: 13.125rem;
+    }
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__container {
+        width: 100%;
+    }
+
+    .footer__container--column {
+        width: 100%;
+    }
+
+    .footer__icono {
+        margin: 1.25rem;
+    }
+}
+
+/*CSS Home 550px*/
+@media screen and (max-width: 550px) {
+    /*General*/
+    .contenedor__link h1 {
+        display: none;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .menu__link, .menu__link--deshabilitado {
+        font-size: .875rem;
+    }
+    /*Home*/
+    .articulo {
+        align-items: center;
+        height: 10.75rem;
+    }
+
+    /*Taller*/
+
+    .talleres__imagenes {
+        display: grid;
+        grid-template-areas: 
+        "santa-fe"
+        "colon";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+    }
+
+    .taller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .taller__direc {
+        font-size: .9375rem;
+    }
+
+    .taller__img {
+        width: 100%;
+        height: 13.125rem;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 376px) {
+    /*General*/
+    .menu__link, .menu__link--deshabilitado {
+        font-size: .625rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+    
+    h3 {
+        font-size: .9375rem;
+    }
+
+    p {
+        font-size: .8125rem;
+    }
+    /*Home*/
+    .parallax {
+        display: none;
+    }
+
+    .articulo {
+        height: 6.25rem;
+    }
+
+}

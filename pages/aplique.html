@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/logo_alfa.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Alfa Service</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a class="contenedor__link" href="../index.html">
+          <img
+            class="logo"
+            src="../img/logo_alfa.png"
+            alt="Logo de Alfa Service"
+            width="100"
+            height="100"
+          />
+          <h1 class="nombre-empresa">Alfa Service</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="../index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./tienda.html">Tienda</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link--deshabilitado" href="#">Aplique</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="aplicar">
+        <h2 class="aplicar__titulo">¿Buscando trabajo como técnico?</h2>
+        <h3 class="aplicar__subtitulo">¡Déjanos tus datos acá!</h3>
+        <!--form para aplicantes-->
+        <form class="formulario" action="" method="get" enctype="">
+          <label class="formulario__label" for="nombre">Nombre completo:</label>
+          <input
+            class="formulario__casilla"
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre y apellido"
+          />
+          <br />
+          <label class="formulario__label" for="email"
+            >Dirección de email:
+          </label>
+          <input
+            class="formulario__casilla"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <p>¿Qué estudios tenés?</p>
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="estudio"
+            id="secundario"
+          />
+          <label class="formulario__label--radio" for="secundario"
+            >Título secundario
+          </label>
+          <br />
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="estudio"
+            id="terciario"
+          />
+          <label class="formulario__label--radio" for="terciario"
+            >Título terciario
+          </label>
+          <br />
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="estudio"
+            id="univercitario"
+          />
+          <label class="formulario__label--radio" for="univercitario"
+            >Título universitario
+          </label>
+          <p>¿Con qué electrodomésticos tenés experiencia?</p>
+          <input
+            class="formulario__checkbox"
+            type="checkbox"
+            name="experiencia"
+            id="heladera"
+          />
+          <label class="formulario__label--checkbox" for="heladera"
+            >Heladeras
+          </label>
+          <br />
+          <input
+            class="formulario__checkbox"
+            type="checkbox"
+            name="experiencia"
+            id="lavavajillas"
+          />
+          <label class="formulario__label--checkbox" for="lavavajillas"
+            >Lavavajillas
+          </label>
+          <br />
+          <input
+            class="formulario__checkbox"
+            type="checkbox"
+            name="experiencia"
+            id="lavarropas"
+          />
+          <label class="formulario__label--checkbox" for="lavarropas"
+            >Lavarropas
+          </label>
+          <br />
+          <input
+            class="formulario__checkbox"
+            type="checkbox"
+            name="experiencia"
+            id="secarropas"
+          />
+          <label class="formulario__label--checkbox" for="secarropas"
+            >Secarropas
+          </label>
+          <br />
+          <div class="formulario__btn">
+            <input class="btn" type="submit" value="Enviar" />
+            <input class="btn" type="reset" value="Borrar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright">
+          &#169; 2022 Alfa Service. All rights reserved.
+        </p>
+      </div>
+      <div class="footer__container--column">
+        <p class="footer__telefono">Telefono: 47172226</p>
+        <p class="footer__mail">
+          Email: <a href="https://www.gmail.com">alfaservice@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer__container">
+        <a href="https://www.instagram.com"
+          ><img
+            class="footer__icono"
+            src="../img/icono_instagram.png"
+            alt="Icono de Instagram"
+            height="43"
+            width="43"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img
+            class="footer__icono"
+            src="../img/icono_face.png"
+            alt="Icono de Facebook"
+            height="43"
+            width="43"
+        /></a>
+        <img
+          class="footer__icono"
+          src="../img/icono_whatsapp.png"
+          alt="Icono de Whatsapp"
+          height="43"
+          width="43"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/logo_alfa.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Alfa Service</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a class="contenedor__link" href="../index.html">
+          <img
+            class="logo"
+            src="../img/logo_alfa.png"
+            alt="Logo de Alfa Service"
+            width="100"
+            height="100"
+          />
+          <h1 class="nombre-empresa">Alfa Service</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="../index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./tienda.html">Tienda</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link--deshabilitado" href="#">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./aplique.html">Aplique</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contacto">
+        <h2 class="contacto__titulo">Contáctanos</h2>
+        <h3 class="contacto__subtitulo">
+          Contanos de tu problema para poder ayudarte
+        </h3>
+        <!--form de contacto de cliente-->
+        <form class="formulario" action="" method="get" enctype="">
+          <label class="formulario__label" for="nombre">Nombre completo:</label>
+          <input
+            class="formulario__casilla"
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre y apellido"
+          />
+          <br />
+          <label class="formulario__label" for="email"
+            >Dirección de email:
+          </label>
+          <input
+            class="formulario__casilla"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <p>Dispositivo averiado:</p>
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="dispositivo"
+            id="heladera"
+          />
+          <label class="formulario__label--radio" for="heladera"
+            >Heladera
+          </label>
+          <br />
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="dispositivo"
+            id="lavarropas"
+          />
+          <label class="formulario__label--radio" for="lavarropas"
+            >Lavarropas
+          </label>
+          <br />
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="dispositivo"
+            id="secarropas"
+          />
+          <label class="formulario__label--radio" for="secarropas"
+            >Secarropas
+          </label>
+          <br />
+          <input
+            class="formulario__radio"
+            type="radio"
+            name="dispositivo"
+            id="lavavajillas"
+          />
+          <label class="formulario__label--radio" for="lavavajillas"
+            >Lavavajillas
+          </label>
+          <br />
+          <label class="formulario__label" for="marcas"
+            >Marca del electrodoméstico:
+          </label>
+          <select class="formulario__marca" name="marcas" id="marcas">
+            <option value="samsung">Samsung</option>
+            <option value="lg">Lg</option>
+            <option value="generalElectric">General Electric</option>
+            <option value="whirpool">Whirpool</option>
+            <option value="drean">Drean</option>
+            <option value="longvie">Longvie</option>
+            <option value="otro">Otro</option>
+          </select>
+          <br />
+          <label class="formulario__label" for="descripcion"
+            >Describinos tu problema:
+          </label>
+          <br />
+          <textarea
+            class="formulario__descripcion"
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="formulario__btn">
+            <input class="btn" type="submit" value="Enviar" />
+            <input class="btn" type="reset" value="Borrar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright">
+          &#169; 2022 Alfa Service. All rights reserved.
+        </p>
+      </div>
+      <div class="footer__container--column">
+        <p class="footer__telefono">Telefono: 47172226</p>
+        <p class="footer__mail">
+          Email: <a href="https://www.gmail.com">alfaservice@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer__container">
+        <a href="https://www.instagram.com"
+          ><img
+            class="footer__icono"
+            src="../img/icono_instagram.png"
+            alt="Icono de Instagram"
+            height="43"
+            width="43"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img
+            class="footer__icono"
+            src="../img/icono_face.png"
+            alt="Icono de Facebook"
+            height="43"
+            width="43"
+        /></a>
+        <img
+          class="footer__icono"
+          src="../img/icono_whatsapp.png"
+          alt="Icono de Whatsapp"
+          height="43"
+          width="43"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
