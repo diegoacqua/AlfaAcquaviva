@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/logo_alfa.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Alfa Service</title>
   </head>
@@ -49,8 +50,14 @@
       </section>
       <!--section con info de como trabajamos-->
       <section id="info">
-        <h2 class="titulo">Service de electrodomésticos</h2>
-        <article class="articulo informacion">
+        <h2 class="titulo" data-aos="fade-right" data-aos-duration="1000">
+          Service de electrodomésticos
+        </h2>
+        <article
+          class="articulo informacion"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h3>¿Cómo trabajamos?</h3>
           <p>
             Una vez que nos informa cuál es su problema, nos comunicamos con el
@@ -61,7 +68,11 @@
             el momento.
           </p>
         </article>
-        <article class="articulo solucion">
+        <article
+          class="articulo solucion"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h3>
             Queremos darte una solución rápida para el service de tu
             electrodoméstico
@@ -72,7 +83,11 @@
             cita para la revisacion de tu electrodoméstico.
           </p>
         </article>
-        <article class="articulo garantia">
+        <article
+          class="articulo garantia"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h3>Garantía del service</h3>
           <p>
             Si el electrodoméstico, luego de ser arreglado, vuelve a fallar por
@@ -121,5 +136,9 @@
         />
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

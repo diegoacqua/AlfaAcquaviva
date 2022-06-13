@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../img/logo_alfa.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Alfa Service</title>
   </head>
@@ -44,7 +45,7 @@
     </header>
     <main id="nosotros">
       <!--section de la historia de alfa service-->
-      <section id="historia">
+      <section id="historia" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="historia__titulo">Un poco de nuestra historia</h2>
         <p class="historia__texto">
           Alfa Service comenzó 1964, creada por los hermanos Francisco Acquaviva
@@ -65,7 +66,7 @@
         </p>
       </section>
       <!--section de imagenes de talleres-->
-      <section id="talleres">
+      <section id="talleres" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="talleres__titulo">Nuestros antiguos talleres</h2>
         <div class="talleres__imagenes santa-fe">
           <article class="taller">
@@ -129,5 +130,9 @@
         />
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

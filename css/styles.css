@@ -80,14 +80,24 @@ nav {
 }
 
 .menu__link {
-    margin: .8125rem;
+    padding: .375rem;
+    margin: .375rem;
     font-size: 1.10rem;
     color: white;
     text-decoration: none;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    transition: border 1s;
+
+}
+
+.menu__link:hover {
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .menu__link--deshabilitado {
-    margin: .8125rem;
+    padding: .8125rem;
     font-size: 1.10rem;
     color: white;
     text-decoration: none;
@@ -192,6 +202,7 @@ nav {
     margin: .3125rem;
     border-radius: .9375rem;
     border: .125rem solid midnightblue;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .btn--producto:hover {
@@ -253,6 +264,11 @@ nav {
     padding: .3125rem;
     height: 25.625rem;
     width: 100%;
+    transition: all 0.5s;
+}
+
+.taller__img:hover {
+    transform: scale(1.05);
 }
 
 /*CSS contacto y aplique*/
@@ -341,6 +357,7 @@ nav {
     border-radius: .9375rem;
     border: .125rem solid midnightblue;
     margin: 0 1.5625rem;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .btn:hover {
@@ -396,6 +413,9 @@ nav {
 
 .footer__icono {
     margin: .3125rem;
+    height: 2.6875rem;
+    width: 2.6875rem;
+
 }
 
 /*CCS Home 1024px*/

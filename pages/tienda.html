@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../img/logo_alfa.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Alfa Service</title>
   </head>
@@ -48,7 +49,7 @@
         <!--section de heladeras-->
         <section class="tienda">
           <h3 class="tienda__subtitulo">Heladeras</h3>
-          <article class="producto">
+          <article class="producto" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="../img/heladera_whirpool.jpg"
               alt="Heladera Whirpool"
@@ -59,7 +60,7 @@
             <p class="producto__precio">$72.500</p>
             <button class="btn--producto" type="button">Comprar ahora</button>
           </article>
-          <article class="producto">
+          <article class="producto" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="../img/heladera_GE.jpg"
               alt="Heladera General Electric"
@@ -72,7 +73,7 @@
             <p class="producto__precio">$58.125</p>
             <button class="btn--producto" type="button">Comprar ahora</button>
           </article>
-          <article class="producto">
+          <article class="producto" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="../img/heladera_LG.jpg"
               alt="Heladera Lg"
@@ -89,7 +90,7 @@
         <!--section de lavarropas-->
         <section class="tienda">
           <h3 class="tienda__subtitulo">Lavarropas</h3>
-          <article class="producto">
+          <article class="producto" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="../img/lavarropas_drean.jpg"
               alt="Lavarropas Dream carga frontal"
@@ -102,7 +103,7 @@
             <p class="producto__precio">$81.399</p>
             <button class="btn--producto" type="button">Comprar ahora</button>
           </article>
-          <article class="producto">
+          <article class="producto" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="../img/lavarropas_samsung.jpg"
               alt="Lavarropas Samsung carga frontal"
@@ -156,5 +157,9 @@
         />
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
