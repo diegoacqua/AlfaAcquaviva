@@ -119,6 +119,10 @@ header .container-fluid {
     --bs-gutter-x: 0;
 }
 
+.navbar-collapse {
+    background-color: #af0a29;
+}
+
 /*CSS Home*/
 .parallax {
     background-image: url("../img/imagen_parallax.webp");
