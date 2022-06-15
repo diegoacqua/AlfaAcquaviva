@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto&display=swap');
 
+/*Normalizar*/
 * {
     margin: 0%;
     padding: 0%;
@@ -9,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
+    color: black;
 }
 
 h1, h2, h3, .menu__link, .menu__link--deshabilitado,
@@ -45,7 +47,7 @@ header {
 
 .contenedor__link {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -57,22 +59,17 @@ header {
 
 .nombre-empresa {
     font-size: 2.625rem;
-    position: relative;
-    bottom: 1.5625rem;
+    margin-bottom: 0%;
 }
 
-nav {
+.nav {
     background-color: crimson;
-    display: flex;
     height: 2.875rem;
-    justify-content: end;
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding-right: .75rem;
+    margin-bottom: 0%;
 }
 
 .menu__item {
@@ -80,20 +77,19 @@ nav {
 }
 
 .menu__link {
-    padding: .375rem;
-    margin: .375rem;
     font-size: 1.10rem;
     color: white;
-    text-decoration: none;
     border: 2px solid crimson;
     border-radius: 5px;
     transition: border 1s;
+    padding: .3125rem;
 
 }
 
 .menu__link:hover {
     border: 2px solid white;
     border-radius: 5px;
+    color: white;
 }
 
 .menu__link--deshabilitado {
@@ -103,6 +99,24 @@ nav {
     text-decoration: none;
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+/*Normalizar bootstrap*/
+.menu__link--deshabilitado:hover {
+    color: white;
+}
+
+header .container-fluid {
+    background-color: crimson;
+    z-index: 1;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
 }
 
 /*CSS Home*/
@@ -118,23 +132,15 @@ nav {
 #info {
     border-top: 2.65rem solid midnightblue;
     padding-top: 1.25rem;
-    display: grid;
-    grid-template-areas: 
-    "info__titulo"
-    "info__informacion"
-    "info__solucion"
-    "info__garantia";
-    grid-template-rows: 3.125rem 1fr 1fr 1fr;
+    
 }
 
 #info h2 {
     margin: .75rem;
-    display: flex;
 }
 
 .articulo {
     margin: 3.25rem 1.25rem;
-    height: 6.75rem;
 }
 
 .articulo h3, .articulo p {
@@ -143,22 +149,6 @@ nav {
 
 .articulo p {
     margin: 2.25rem 2.5rem;
-}
-
-.titulo {
-    grid-area: info__titulo;
-}
-
-.informacion {
-    grid-area: info__informacion;
-}
-
-.solucion {
-    grid-area: info__solucion;
-}
-
-.garantia {
-    grid-area: info__garantia;
 }
 
 /*CSS Tienda*/
@@ -211,17 +201,11 @@ nav {
 }
 
 /*CSS Nosotros*/
-
-#historia {
-    margin: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .historia__titulo {
     padding: .625rem 0;
-    margin-bottom: .625rem;
+    margin-top: .625rem;
+    display: flex;
+    justify-content: center;
 }
 
 .historia__texto {
@@ -233,21 +217,6 @@ nav {
     padding: .625rem 0;
     display: flex;
     justify-content: center;
-}
-
-.talleres__imagenes {
-    display: grid;
-    grid-template-areas: 
-    "santa-fe colon";
-    grid-template-columns: 1fr 1fr;
-}
-
-.santa-fe {
-    grid-area: santa-fe;
-}
-
-.colon {
-    grid-area: colon;
 }
 
 #talleres .taller {
@@ -434,8 +403,6 @@ nav {
 
     .articulo {
         max-width: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
     }
 
@@ -451,10 +418,7 @@ nav {
         justify-content: center;
         align-items: center;
     }
-    
-    nav {
-        justify-content: center;
-    }
+
     /*Home*/
     .articulo {
         align-items: center;
@@ -490,6 +454,10 @@ nav {
 /*CSS Home 550px*/
 @media screen and (max-width: 550px) {
     /*General*/
+
+    body {
+        font-size: 14px;
+    }
     .contenedor__link h1 {
         display: none;
     }
@@ -505,28 +473,22 @@ nav {
     .menu__link, .menu__link--deshabilitado {
         font-size: .875rem;
     }
+    
     /*Home*/
     .articulo {
-        align-items: center;
-        height: 10.75rem;
+        margin: 20px;    
+    }
+
+    .articulo h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articulo p {
+        margin: 0;
     }
 
     /*Taller*/
-
-    .talleres__imagenes {
-        display: grid;
-        grid-template-areas: 
-        "santa-fe"
-        "colon";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: none;
-    }
-
-    .taller {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     
     .taller__direc {
         font-size: .9375rem;
@@ -542,8 +504,13 @@ nav {
 
 @media screen and (max-width: 376px) {
     /*General*/
+    body {
+        font-size: 10px ;
+    }
+    
     .menu__link, .menu__link--deshabilitado {
         font-size: .625rem;
+        border: 0px;
     }
 
     h2 {
@@ -563,7 +530,7 @@ nav {
     }
 
     .articulo {
-        height: 6.25rem;
+        margin: 15px;
     }
 
 }
