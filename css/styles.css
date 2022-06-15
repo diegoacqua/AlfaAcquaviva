@@ -119,10 +119,6 @@ header .container-fluid {
     --bs-gutter-x: 0;
 }
 
-.navbar-collapse {
-    background-color: #af0a29;
-}
-
 /*CSS Home*/
 .parallax {
     background-image: url("../img/imagen_parallax.webp");
@@ -414,6 +410,15 @@ header .container-fluid {
         margin: 0.25rem 2.5rem;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #af0a29;
+    }
+    .menu__link {
+        border: 0px;
+    }
 }
 
 @media screen and (max-width: 680px) {
