@@ -178,7 +178,7 @@ nav {
 
 }
 
-.productos-grid {
+.productos-grid--heladeras {
     display: grid;
     grid-template-areas:
     "whir ge lg"
@@ -200,9 +200,26 @@ nav {
     grid-area: lg;
 }
 
-.productos {
-    display: flex;
-    justify-content: space-evenly;
+.productos-grid--lavarropas {
+    display: grid;
+    grid-template-areas: 
+    "drean samsung lg-lava"
+    ". . ."
+    ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0 0;
+}
+
+.drean {
+    grid-area: drean;
+}
+
+.samsung {
+    grid-area: samsung;
+}
+
+.lg-lava {
+    grid-area: lg-lava;
 }
 
 .producto {
@@ -215,23 +232,14 @@ nav {
 .producto__imagen {
     height: 250px;
     width: 250px;
-}
-
-.producto__imagen--lavarropas {
     align-self: center;
 }
 
-.producto__nombre--heladera {
+.producto__nombre {
+    width: 100%;
     margin: .3125rem;
     font-weight: bold;
 }
-
-.producto__nombre--lavarropas {
-    width: 18.5rem;
-    margin: .3125rem;
-    font-weight: bold;
-}
-
 .producto__precio {
     margin: .3125rem;
 }
@@ -485,13 +493,23 @@ nav {
     }
 
     /*Tienda*/
-    .productos-grid {
+    .productos-grid--heladeras {
         grid-template-areas: 
         "whir ge"
         "lg lg"
         ". .";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 0;
+        justify-items: center;
+    }
+
+    .productos-grid--lavarropas {
+        grid-template-areas:
+        "drean samsung"
+        "lg-lava lg-lava "
+        ". .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
         justify-items: center;
     }
 }
@@ -519,10 +537,6 @@ nav {
 
     .tienda__subtitulo {
         align-self: center;
-    }
-
-    .productos {
-        flex-direction: column;
     }
 
     .producto {
@@ -584,12 +598,21 @@ nav {
     }
 
     /*Tienda*/
-    .productos-grid {
+    .productos-grid--heladeras {
         grid-template-areas: 
-        "whir . ."
-        "ge . ."
-        "lg . .";
-        grid-template-columns: 1fr 0 0;
+        "whir"
+        "ge"
+        "lg";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .productos-grid--lavarropas {
+        grid-template-areas: 
+        "drean"
+        "samsung"
+        "lg-lava";
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
@@ -653,12 +676,16 @@ nav {
     }
 
     /*Tienda*/
-    .producto__imagen, .producto__imagen--lavarropas {
+    .producto__imagen {
         height: 200px;
         width: 200px;
     }
 
     .producto__nombre--lavarropas {
-        width: 14.5rem;
+        width: 100%;
+    }
+
+    .btn--producto {
+        width: 100%;
     }
 }
