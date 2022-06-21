@@ -45,7 +45,7 @@ header {
 
 .contenedor__link {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -57,7 +57,6 @@ header {
 
 .nombre-empresa {
     font-size: 2.625rem;
-    position: relative;
     bottom: 1.5625rem;
 }
 
@@ -164,10 +163,14 @@ nav {
 /*CSS Tienda*/
 #tienda {
     margin: .75rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .tienda {
     margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .tienda__subtitulo {
@@ -175,10 +178,47 @@ nav {
 
 }
 
+.productos-grid {
+    display: grid;
+    grid-template-areas:
+    "whir ge lg"
+    ". . ."
+    ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0 0;
+}
+
+.whir {
+    grid-area: whir;
+}
+
+.ge {
+    grid-area: ge;
+}
+
+.lg {
+    grid-area: lg;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .producto {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin: 1.875rem;
     padding: 0 3.75rem;
+}
+
+.producto__imagen {
+    height: 250px;
+    width: 250px;
+}
+
+.producto__imagen--lavarropas {
+    align-self: center;
 }
 
 .producto__nombre--heladera {
@@ -197,6 +237,7 @@ nav {
 }
 
 .btn--producto {
+    width: 75%;
     font-size: 1.25rem;
     padding: 0 1.25rem;
     margin: .3125rem;
@@ -366,7 +407,6 @@ nav {
 }
 
 /*CSS footer*/
-
 .footer {
     height: 12.4375rem;
     background-color: midnightblue;
@@ -426,6 +466,7 @@ nav {
         width: 6.25rem;
         padding-bottom: .625rem;
     }
+
     /*Home*/
     #info h2 {
         display: flex;
@@ -443,9 +484,19 @@ nav {
         margin: 0.25rem 2.5rem;
     }
 
+    /*Tienda*/
+    .productos-grid {
+        grid-template-areas: 
+        "whir ge"
+        "lg lg"
+        ". .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0;
+        justify-items: center;
+    }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
     /*General*/
     header .contenedor {
         justify-content: center;
@@ -455,10 +506,29 @@ nav {
     nav {
         justify-content: center;
     }
+
     /*Home*/
     .articulo {
         align-items: center;
     }
+
+    /*Tienda*/
+    #tienda h2 {
+        align-self: center;
+    }
+
+    .tienda__subtitulo {
+        align-self: center;
+    }
+
+    .productos {
+        flex-direction: column;
+    }
+
+    .producto {
+        padding: 0;
+    }
+
     /*Nosotros*/
     .taller__direc {
         font-size: .9375rem;
@@ -468,6 +538,7 @@ nav {
         width: 85%;
         height: 13.125rem;
     }
+
     /*Footer*/
     .footer{
         display: flex;
@@ -505,14 +576,24 @@ nav {
     .menu__link, .menu__link--deshabilitado {
         font-size: .875rem;
     }
+
     /*Home*/
     .articulo {
         align-items: center;
         height: 10.75rem;
     }
 
-    /*Taller*/
+    /*Tienda*/
+    .productos-grid {
+        grid-template-areas: 
+        "whir . ."
+        "ge . ."
+        "lg . .";
+        grid-template-columns: 1fr 0 0;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 
+    /*Nosotros*/
     .talleres__imagenes {
         display: grid;
         grid-template-areas: 
@@ -542,6 +623,10 @@ nav {
 
 @media screen and (max-width: 376px) {
     /*General*/
+    .menu {
+        padding-right: 0;
+    }
+
     .menu__link, .menu__link--deshabilitado {
         font-size: .625rem;
     }
@@ -557,6 +642,7 @@ nav {
     p {
         font-size: .8125rem;
     }
+
     /*Home*/
     .parallax {
         display: none;
@@ -566,4 +652,13 @@ nav {
         height: 6.25rem;
     }
 
+    /*Tienda*/
+    .producto__imagen, .producto__imagen--lavarropas {
+        height: 200px;
+        width: 200px;
+    }
+
+    .producto__nombre--lavarropas {
+        width: 14.5rem;
+    }
 }
