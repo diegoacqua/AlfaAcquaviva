@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
+    color: black;
 }
 
 h1, h2, h3, .menu__link, .menu__link--deshabilitado,

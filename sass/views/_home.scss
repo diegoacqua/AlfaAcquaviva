@@ -1,0 +1,70 @@
+/*Home*/
+.parallax {
+    background-image: url("../img/imagen_parallax.webp");
+    height: 40rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info {
+    border-top: 2.65rem solid $secondary;
+    padding-top: 1.25rem;
+    display: grid;
+    grid-template-areas: 
+    "info__titulo"
+    "info__informacion"
+    "info__solucion"
+    "info__garantia";
+    grid-template-rows: 3.125rem 1fr 1fr 1fr;
+
+    h2 {
+        margin: .75rem;
+        display: flex;
+    }
+
+    .articulo {
+        margin: 3.25rem 1.25rem;
+        height: 6.75rem;
+
+        h3 {
+            margin: .625rem;
+        }
+
+        p {
+            margin: 2.25rem 2.5rem;
+        }
+    }
+
+    .titulo {
+        grid-area: info__titulo;
+    }
+
+    .informacion {
+        grid-area: info__informacion;
+    }
+    
+    .solucion {
+        grid-area: info__solucion;
+    }
+    
+    .garantia {
+        grid-area: info__garantia;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
