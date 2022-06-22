@@ -1,0 +1,256 @@
+/*Media queries*/
+/*CCS Home 1024px*/
+@media screen and (max-width: 1024px) {
+    /*General*/
+    .logo {
+        height: 6.875rem;
+        width: 6.25rem;
+        padding-bottom: .625rem;
+    }
+
+    /*Home*/
+    #info h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #info {
+        .articulo {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            p {
+                margin: 0.25rem 2.5rem;
+            }
+    
+        }
+    }
+   
+    /*Tienda*/
+    .productos-grid--heladeras {
+        grid-template-areas: 
+        "whir ge"
+        "lg lg"
+        ". .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0;
+        justify-items: center;
+    }
+
+    .productos-grid--lavarropas {
+        grid-template-areas:
+        "drean samsung"
+        "lg-lava lg-lava "
+        ". .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*General*/
+    header {
+    
+        .contenedor {
+            justify-content: center;
+            align-items: center;
+        }
+    
+        nav {
+            justify-content: center;
+        }
+    }
+
+    /*Home*/
+    .articulo {
+        align-items: center;
+    }
+
+    /*Tienda*/
+    #tienda h2 {
+        align-self: center;
+    }
+
+    .tienda__subtitulo {
+        align-self: center;
+    }
+
+    .producto {
+        padding: 0;
+    }
+
+    /*Nosotros*/
+    .taller__direc {
+        font-size: .9375rem;
+    }
+
+    .taller__img {
+        width: 85%;
+        height: 13.125rem;
+    }
+
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+
+        .footer__container {
+            width: 100%;
+
+            .footer__icono {
+                margin: 1.25rem;
+            }
+        }
+
+        .footer__container--column {
+            width: 100%;
+        }
+    
+    }
+
+   
+
+    
+    
+}
+
+/*CSS Home 550px*/
+@media screen and (max-width: 550px) {
+    /*General*/
+    .contenedor__link h1 {
+        display: none;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    nav{
+        
+        .menu {
+            
+            .menu__item {
+                
+                .menu__link, .menu__link--deshabilitado {
+                    font-size: .875rem;
+                }
+            }
+        }
+
+    }
+
+    /*Home*/
+    #info {
+        .articulo {
+            align-items: center;
+            height: 10.75rem;
+        }
+    }
+    /*Tienda*/
+    .productos-grid--heladeras {
+        grid-template-areas: 
+        "whir"
+        "ge"
+        "lg";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .productos-grid--lavarropas {
+        grid-template-areas: 
+        "drean"
+        "samsung"
+        "lg-lava";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /*Nosotros*/
+    .talleres__imagenes {
+        display: grid;
+        grid-template-areas: 
+        "santa-fe"
+        "colon";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+    }
+
+    .taller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .taller__direc {
+            font-size: .9375rem;
+        }
+
+        .taller__img {
+            width: 100%;
+            height: 13.125rem;
+            margin: 0;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 376px) {
+    /*General*/
+    nav{
+        
+        .menu {
+            padding-right: 0;
+            
+            .menu__item {
+                
+                .menu__link, .menu__link--deshabilitado {
+                    font-size: .625rem;
+                }
+            }
+        }
+
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+    
+    h3 {
+        font-size: .9375rem;
+    }
+
+    p {
+        font-size: .8125rem;
+    }
+
+    /*Home*/
+    .parallax {
+        display: none;
+    }
+
+    #info {
+        .articulo {
+            height: 6.25rem;
+        }
+    }
+
+    /*Tienda*/
+    .producto__imagen {
+        height: 200px;
+        width: 200px;
+    }
+
+    .producto__nombre--lavarropas {
+        width: 100%;
+    }
+
+    .btn--producto {
+        width: 100%;
+    }
+}
