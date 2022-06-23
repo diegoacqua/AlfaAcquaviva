@@ -1,0 +1,79 @@
+#historia {
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .historia__titulo {
+        padding: .625rem 0;
+        margin-bottom: .625rem;
+    }
+
+    .historia__texto {
+        margin: 1.25rem;
+        padding-left: .625rem;
+    }
+    
+}
+
+#talleres {
+    .talleres__titulo {
+        padding: .625rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .talleres__imagenes {
+        display: grid;
+        grid-template-areas: 
+        "santa-fe colon";
+        grid-template-columns: 1fr 1fr;
+
+        .taller {
+            margin: .625rem;
+
+            .taller__direc {
+                margin-bottom: .625rem;
+                padding-left: .625rem;
+            }
+
+            .taller__img {
+                margin-left: .625rem;
+                padding: .3125rem;
+                height: 25.625rem;
+                width: 100%;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .santa-fe {
+        grid-area: santa-fe;
+    }
+
+    .colon {
+        grid-area: colon;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

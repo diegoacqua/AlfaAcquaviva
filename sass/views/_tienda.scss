@@ -1,0 +1,121 @@
+/*Tienda*/
+#tienda {
+    margin: .75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tienda {
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+    .tienda__subtitulo {
+        padding: .625rem 0;
+    
+    }
+    
+    .productos-grid--heladeras {
+        display: grid;
+        grid-template-areas:
+        "whir ge lg"
+        ". . ."
+        ". . .";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0 0;
+    }
+
+    .whir {
+        grid-area: whir;
+    }
+
+    .ge {
+        grid-area: ge;
+    }
+    
+    .lg {
+        grid-area: lg;
+    }
+
+    .productos-grid--lavarropas {
+        display: grid;
+        grid-template-areas: 
+        "drean samsung lg-lava"
+        ". . ."
+        ". . .";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0 0;
+    }
+
+    .drean {
+        grid-area: drean;
+    }
+    
+    .samsung {
+        grid-area: samsung;
+    }
+    
+    .lg-lava {
+        grid-area: lg-lava;
+    }
+
+    .producto {
+        display: flex;
+        flex-direction: column;
+        margin: 1.875rem;
+        padding: 0 3.75rem;
+
+        .producto__imagen {
+            height: 250px;
+            width: 250px;
+            align-self: center;
+        }
+
+        .producto__nombre {
+            width: 100%;
+            margin: .3125rem;
+            font-weight: bold;
+        }
+
+        .producto__precio {
+            margin: .3125rem;
+        }
+
+        .btn--producto {
+            width: 75%;
+            font-size: 1.25rem;
+            padding: 0 1.25rem;
+            margin: .3125rem;
+            border-radius: .9375rem;
+            border: .125rem solid midnightblue;
+            transition: background-color 0.5s, color 0.5s;
+
+            &:hover {
+                background-color: midnightblue;
+                color: white;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

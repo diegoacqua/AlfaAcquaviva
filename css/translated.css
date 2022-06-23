@@ -156,6 +156,108 @@ nav {
   #info .garantia {
     grid-area: info__garantia; }
 
+/*Tienda*/
+#tienda {
+  margin: .75rem;
+  display: flex;
+  flex-direction: column; }
+
+.tienda {
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column; }
+  .tienda .tienda__subtitulo {
+    padding: .625rem 0; }
+  .tienda .productos-grid--heladeras {
+    display: grid;
+    grid-template-areas: "whir ge lg" ". . ." ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0 0; }
+  .tienda .whir {
+    grid-area: whir; }
+  .tienda .ge {
+    grid-area: ge; }
+  .tienda .lg {
+    grid-area: lg; }
+  .tienda .productos-grid--lavarropas {
+    display: grid;
+    grid-template-areas: "drean samsung lg-lava" ". . ." ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0 0; }
+  .tienda .drean {
+    grid-area: drean; }
+  .tienda .samsung {
+    grid-area: samsung; }
+  .tienda .lg-lava {
+    grid-area: lg-lava; }
+  .tienda .producto {
+    display: flex;
+    flex-direction: column;
+    margin: 1.875rem;
+    padding: 0 3.75rem; }
+    .tienda .producto .producto__imagen {
+      height: 250px;
+      width: 250px;
+      align-self: center; }
+    .tienda .producto .producto__nombre {
+      width: 100%;
+      margin: .3125rem;
+      font-weight: bold; }
+    .tienda .producto .producto__precio {
+      margin: .3125rem; }
+    .tienda .producto .btn--producto {
+      width: 75%;
+      font-size: 1.25rem;
+      padding: 0 1.25rem;
+      margin: .3125rem;
+      border-radius: .9375rem;
+      border: .125rem solid midnightblue;
+      transition: background-color 0.5s, color 0.5s; }
+      .tienda .producto .btn--producto:hover {
+        background-color: midnightblue;
+        color: white; }
+
+#historia {
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #historia .historia__titulo {
+    padding: .625rem 0;
+    margin-bottom: .625rem; }
+  #historia .historia__texto {
+    margin: 1.25rem;
+    padding-left: .625rem; }
+
+#talleres .talleres__titulo {
+  padding: .625rem 0;
+  display: flex;
+  justify-content: center; }
+
+#talleres .talleres__imagenes {
+  display: grid;
+  grid-template-areas: "santa-fe colon";
+  grid-template-columns: 1fr 1fr; }
+  #talleres .talleres__imagenes .taller {
+    margin: .625rem; }
+    #talleres .talleres__imagenes .taller .taller__direc {
+      margin-bottom: .625rem;
+      padding-left: .625rem; }
+    #talleres .talleres__imagenes .taller .taller__img {
+      margin-left: .625rem;
+      padding: .3125rem;
+      height: 25.625rem;
+      width: 100%;
+      transition: all 0.5s; }
+      #talleres .talleres__imagenes .taller .taller__img:hover {
+        transform: scale(1.05); }
+
+#talleres .santa-fe {
+  grid-area: santa-fe; }
+
+#talleres .colon {
+  grid-area: colon; }
+
 /*Media queries*/
 /*CCS Home 1024px*/
 @media screen and (max-width: 1024px) {
@@ -176,12 +278,12 @@ nav {
     #info .articulo p {
       margin: 0.25rem 2.5rem; }
   /*Tienda*/
-  .productos-grid--heladeras {
+  .tienda .productos-grid--heladeras {
     grid-template-areas: "whir ge" "lg lg" ". .";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0;
     justify-items: center; }
-  .productos-grid--lavarropas {
+  .tienda .productos-grid--lavarropas {
     grid-template-areas: "drean samsung" "lg-lava lg-lava " ". .";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -200,14 +302,14 @@ nav {
   /*Tienda*/
   #tienda h2 {
     align-self: center; }
-  .tienda__subtitulo {
+  .tienda .tienda__subtitulo {
     align-self: center; }
-  .producto {
+  .tienda .producto {
     padding: 0; }
   /*Nosotros*/
-  .taller__direc {
+  #talleres .talleres__imagenes .taller .taller__direc {
     font-size: .9375rem; }
-  .taller__img {
+  #talleres .talleres__imagenes .taller .taller__img {
     width: 85%;
     height: 13.125rem; }
   /*Footer*/
@@ -237,30 +339,30 @@ nav {
     align-items: center;
     height: 10.75rem; }
   /*Tienda*/
-  .productos-grid--heladeras {
+  .tienda .productos-grid--heladeras {
     grid-template-areas: "whir" "ge" "lg";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
-  .productos-grid--lavarropas {
+  .tienda .productos-grid--lavarropas {
     grid-template-areas: "drean" "samsung" "lg-lava";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
   /*Nosotros*/
-  .talleres__imagenes {
+  #talleres .talleres__imagenes {
     display: grid;
     grid-template-areas: "santa-fe" "colon";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none; }
-  .taller {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .taller .taller__direc {
-      font-size: .9375rem; }
-    .taller .taller__img {
-      width: 100%;
-      height: 13.125rem;
-      margin: 0; } }
+    #talleres .talleres__imagenes .taller {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #talleres .talleres__imagenes .taller .taller__direc {
+        font-size: .9375rem; }
+      #talleres .talleres__imagenes .taller .taller__img {
+        width: 100%;
+        height: 13.125rem;
+        margin: 0; } }
 
 @media screen and (max-width: 376px) {
   /*General*/
@@ -280,10 +382,10 @@ nav {
   #info .articulo {
     height: 6.25rem; }
   /*Tienda*/
-  .producto__imagen {
+  .tienda .producto .producto__imagen {
     height: 200px;
     width: 200px; }
-  .producto__nombre--lavarropas {
+  .tienda .producto .producto__nombre--lavarropas {
     width: 100%; }
-  .btn--producto {
+  .tienda .producto .btn--producto {
     width: 100%; } }
