@@ -13,7 +13,7 @@ body {
   font-size: 1.125rem;
   color: black; }
 
-h1, h2, h3, .menu__link, .menu__link--deshabilitado,
+h1, h2, h3, .menu__link, nav .menu .menu__item .menu__link--deshabilitado, .menu__link--deshabilitado,
 .producto__nombre--heladera, .producto__nombre--lavarropas {
   font-family: "Lato", sans-serif; }
 
@@ -30,6 +30,7 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
+/*Mixins*/
 /* Partials */
 /*Header*/
 header {
@@ -66,7 +67,7 @@ nav {
     padding-right: .75rem; }
     nav .menu .menu__item {
       list-style: none; }
-      nav .menu .menu__item .menu__link {
+      nav .menu .menu__item .menu__link, nav .menu .menu__item .menu__link--deshabilitado {
         padding: .375rem;
         margin: .375rem;
         font-size: 1.10rem;
@@ -75,14 +76,10 @@ nav {
         border: 2px solid crimson;
         border-radius: 5px;
         transition: border 1s; }
-        nav .menu .menu__item .menu__link:hover {
+        nav .menu .menu__item .menu__link:hover, nav .menu .menu__item .menu__link--deshabilitado:hover {
           border: 2px solid white;
           border-radius: 5px; }
       nav .menu .menu__item .menu__link--deshabilitado {
-        padding: .8125rem;
-        font-size: 1.10rem;
-        color: white;
-        text-decoration: none;
         opacity: 0.6;
         cursor: not-allowed; }
 
@@ -196,8 +193,8 @@ nav {
     margin: 1.875rem;
     padding: 0 3.75rem; }
     .tienda .producto .producto__imagen {
-      height: 250px;
       width: 250px;
+      height: 250px;
       align-self: center; }
     .tienda .producto .producto__nombre {
       width: 100%;
@@ -246,8 +243,8 @@ nav {
     #talleres .talleres__imagenes .taller .taller__img {
       margin-left: .625rem;
       padding: .3125rem;
-      height: 25.625rem;
       width: 100%;
+      height: 410px;
       transition: all 0.5s; }
       #talleres .talleres__imagenes .taller .taller__img:hover {
         transform: scale(1.05); }
@@ -263,8 +260,8 @@ nav {
 @media screen and (max-width: 1024px) {
   /*General*/
   .logo {
-    height: 6.875rem;
-    width: 6.25rem;
+    width: 110px;
+    height: 100px;
     padding-bottom: .625rem; }
   /*Home*/
   #info h2 {
@@ -311,7 +308,7 @@ nav {
     font-size: .9375rem; }
   #talleres .talleres__imagenes .taller .taller__img {
     width: 85%;
-    height: 13.125rem; }
+    height: 210px; }
   /*Footer*/
   .footer {
     display: flex;
@@ -332,7 +329,7 @@ nav {
     font-size: 1.5rem; }
   h3 {
     font-size: 1.25rem; }
-  nav .menu .menu__item .menu__link, nav .menu .menu__item .menu__link--deshabilitado {
+  nav .menu .menu__item .menu__link, nav .menu .menu__item .menu__link--deshabilitado, nav .menu .menu__item .menu__link--deshabilitado {
     font-size: .875rem; }
   /*Home*/
   #info .articulo {
@@ -361,14 +358,14 @@ nav {
         font-size: .9375rem; }
       #talleres .talleres__imagenes .taller .taller__img {
         width: 100%;
-        height: 13.125rem;
+        height: 210px;
         margin: 0; } }
 
 @media screen and (max-width: 376px) {
   /*General*/
   nav .menu {
     padding-right: 0; }
-    nav .menu .menu__item .menu__link, nav .menu .menu__item .menu__link--deshabilitado {
+    nav .menu .menu__item .menu__link, nav .menu .menu__item .menu__link--deshabilitado, nav .menu .menu__item .menu__link--deshabilitado {
       font-size: .625rem; }
   h2 {
     font-size: 1.125rem; }
@@ -383,8 +380,8 @@ nav {
     height: 6.25rem; }
   /*Tienda*/
   .tienda .producto .producto__imagen {
-    height: 200px;
-    width: 200px; }
+    width: 200px;
+    height: 200px; }
   .tienda .producto .producto__nombre--lavarropas {
     width: 100%; }
   .tienda .producto .btn--producto {

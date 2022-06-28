@@ -40,8 +40,7 @@
             .taller__img {
                 margin-left: .625rem;
                 padding: .3125rem;
-                height: 25.625rem;
-                width: 100%;
+                @include size(100%, 410px);
                 transition: all 0.5s;
 
                 &:hover {

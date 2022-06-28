@@ -3,8 +3,7 @@
 @media screen and (max-width: 1024px) {
     /*General*/
     .logo {
-        height: 6.875rem;
-        width: 6.25rem;
+        @include size(110px, 100px);
         padding-bottom: .625rem;
     }
 
@@ -99,8 +98,7 @@
                 }
             
                 .taller__img {
-                    width: 85%;
-                    height: 13.125rem;
+                    @include size(85%, 210px);
                 }
             
             }
@@ -206,8 +204,7 @@
                 }
         
                 .taller__img {
-                    width: 100%;
-                    height: 13.125rem;
+                    @include size(100%, 210px);
                     margin: 0;
                 }
                 
@@ -263,8 +260,7 @@
     .tienda {
         .producto {
             .producto__imagen {
-                height: 200px;
-                width: 200px;
+                @include size(200px, 200px);
             }
 
             .producto__nombre--lavarropas {

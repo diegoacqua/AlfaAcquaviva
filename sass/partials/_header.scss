@@ -62,10 +62,7 @@ nav {
             }
 
             .menu__link--deshabilitado {
-                padding: .8125rem;
-                font-size: 1.10rem;
-                color: white;
-                text-decoration: none;
+                @extend .menu__link;
                 opacity: 0.6;
                 cursor: not-allowed;
             }
