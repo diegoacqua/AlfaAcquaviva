@@ -1,7 +1,7 @@
 /*Footer*/
 .footer {
     height: 12.4375rem;
-    background-color: $secondary;
+    background-color: map-get($colores, secondary);
     display: flex;
     justify-content: space-evenly;
     align-items: center;

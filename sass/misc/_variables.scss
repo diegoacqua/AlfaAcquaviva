@@ -4,8 +4,9 @@ $font-primary: 'Roboto', sans-serif;
 $font-title: 'Lato', sans-serif;
 
 /*Colors*/
-$primary: crimson;
-$secondary: midnightblue;
-$alternative: #b13b527a;
-$text-color: black;
-
+$colores: (
+    primary: crimson,
+    secondary: midnightblue,
+    alternative: #b13b527a,
+    text-color: black
+);

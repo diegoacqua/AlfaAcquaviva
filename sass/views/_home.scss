@@ -9,7 +9,7 @@
 }
 
 #info {
-    border-top: 2.65rem solid $secondary;
+    border-top: 2.65rem solid map-get($colores, secondary);
     padding-top: 1.25rem;
     display: grid;
     grid-template-areas: 

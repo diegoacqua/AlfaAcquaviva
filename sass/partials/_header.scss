@@ -30,7 +30,7 @@ header {
 }
 
 nav {
-    background-color: $primary;
+    background-color: map-get($colores, primary);
     display: flex;
     height: 2.875rem;
     justify-content: end;
@@ -50,7 +50,7 @@ nav {
                 font-size: 1.10rem;
                 color: white;
                 text-decoration: none;
-                border: 2px solid $primary;
+                border: 2px solid map-get($colores, primary);
                 border-radius: 5px;
                 transition: border 1s;
 

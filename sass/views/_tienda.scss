@@ -90,7 +90,7 @@
             transition: background-color 0.5s, color 0.5s;
 
             &:hover {
-                background-color: midnightblue;
+                background-color: map-get($colores, secondary);
                 color: white;
             }
         }
