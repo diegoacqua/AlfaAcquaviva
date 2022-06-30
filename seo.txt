@@ -1,0 +1,15 @@
+Le cambie los titles a todas las views. 
+
+Agregue las keywords "Service, Lavavajillas, Lavarropas, Secarropas, Heladeras, Tecnico, Alfa Service".
+
+Le agregue descriptions a todas las views.
+
+En index.html agregue "Alfa Service es una compania de Service de electrodomésticos de linea blanca situada en Martínez, Buenos Aires".
+
+En tienda.html agregue "Tienda de Alfa Service, electrodomésticos arreglados y puestos en venta por la compania".
+
+En nosotros.html agregue "Un poco de la historia de nuestro negocio familiar".
+
+En contacto.html agregue "Pongase en contacto con los tecnicos y cuentenos su problema".
+
+En aplique.html agregue "Se buscan técnicos capacitados entre aquí para mostrar su interés".
