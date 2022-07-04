@@ -52,97 +52,105 @@
         <h2 class="aplicar__titulo">¿Buscando trabajo como técnico?</h2>
         <h3 class="aplicar__subtitulo">¡Déjanos tus datos acá!</h3>
         <!--form para aplicantes-->
-        <form class="formulario" action="" method="get" enctype="">
-          <label class="formulario__label" for="nombre">Nombre completo:</label>
-          <input
-            class="formulario__casilla"
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre y apellido"
-          />
-          <br />
-          <label class="formulario__label" for="email"
-            >Dirección de email:
-          </label>
-          <input
-            class="formulario__casilla"
-            type="email"
-            name="email"
-            id="email"
-          />
-          <p>¿Qué estudios tenés?</p>
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="estudio"
-            id="secundario"
-          />
-          <label class="formulario__label--radio" for="secundario"
-            >Título secundario
-          </label>
-          <br />
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="estudio"
-            id="terciario"
-          />
-          <label class="formulario__label--radio" for="terciario"
-            >Título terciario
-          </label>
-          <br />
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="estudio"
-            id="univercitario"
-          />
-          <label class="formulario__label--radio" for="univercitario"
-            >Título universitario
-          </label>
-          <p>¿Con qué electrodomésticos tenés experiencia?</p>
-          <input
-            class="formulario__checkbox"
-            type="checkbox"
-            name="experiencia"
-            id="heladera"
-          />
-          <label class="formulario__label--checkbox" for="heladera"
-            >Heladeras
-          </label>
-          <br />
-          <input
-            class="formulario__checkbox"
-            type="checkbox"
-            name="experiencia"
-            id="lavavajillas"
-          />
-          <label class="formulario__label--checkbox" for="lavavajillas"
-            >Lavavajillas
-          </label>
-          <br />
-          <input
-            class="formulario__checkbox"
-            type="checkbox"
-            name="experiencia"
-            id="lavarropas"
-          />
-          <label class="formulario__label--checkbox" for="lavarropas"
-            >Lavarropas
-          </label>
-          <br />
-          <input
-            class="formulario__checkbox"
-            type="checkbox"
-            name="experiencia"
-            id="secarropas"
-          />
-          <label class="formulario__label--checkbox" for="secarropas"
-            >Secarropas
-          </label>
-          <br />
-          <div class="formulario__btn">
+        <form class="form--aplique" action="" method="get" enctype="">
+          <div class="form__container--info nombre">
+            <label class="form__label" for="nombre">Nombre completo:</label>
+            <input
+              class="form__casilla"
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre y apellido"
+            />
+          </div>
+          <div class="form__container--info mail">
+            <label class="form__label" for="email">Dirección de email: </label>
+            <input class="form__casilla" type="email" name="email" id="email" />
+          </div>
+          <div class="form__container--col estudios">
+            <p>¿Qué estudios tenés?</p>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="estudio"
+                id="secundario"
+              />
+              <label class="form__label--radio" for="secundario"
+                >Título secundario
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="estudio"
+                id="terciario"
+              />
+              <label class="form__label--radio" for="terciario"
+                >Título terciario
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="estudio"
+                id="univercitario"
+              />
+              <label class="form__label--radio" for="univercitario"
+                >Título universitario
+              </label>
+            </div>
+          </div>
+          <div class="form__container--col experiencia">
+            <p>¿Con qué electrodomésticos tenés experiencia?</p>
+            <div class="form__opcion">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="experiencia"
+                id="heladera"
+              />
+              <label class="form__label--checkbox" for="heladera"
+                >Heladeras
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="experiencia"
+                id="lavavajillas"
+              />
+              <label class="form__label--checkbox" for="lavavajillas"
+                >Lavavajillas
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="experiencia"
+                id="lavarropas"
+              />
+              <label class="form__label--checkbox" for="lavarropas"
+                >Lavarropas
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="experiencia"
+                id="secarropas"
+              />
+              <label class="form__label--checkbox" for="secarropas"
+                >Secarropas
+              </label>
+            </div>
+          </div>
+          <div class="form__btn botones">
             <input class="btn" type="submit" value="Enviar" />
             <input class="btn" type="reset" value="Borrar" />
           </div>

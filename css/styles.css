@@ -323,6 +323,8 @@ nav {
 
 /*CSS contacto y aplique*/
 #contacto, #aplicar {
+    display: flex;
+    flex-direction: column;
     margin: 1.25rem;
     background-color: #b13b527a;
     border: .3125rem solid;
@@ -330,75 +332,122 @@ nav {
 }
 
 .contacto__titulo {
+    display: flex;
+    justify-content: center;
     padding: .625rem 0;
-    margin-bottom: .625rem;
-    margin-left: 42.6875rem;
-    
+    margin-bottom: .625rem; 
 }
 
 .contacto__subtitulo {
+    display: flex;
+    justify-content: center;
     padding:0 0 .625rem .625rem;
-    margin-left: 31.1875rem;
 }
 
 .aplicar__titulo {
+    display: flex;
+    justify-content: center;
     padding: .625rem 0;
     margin-bottom: .625rem;
-    margin-left: 33.4375rem;
-    
 }
 
 .aplicar__subtitulo {
+    display: flex;
+    justify-content: center;
     padding:0 0 .625rem .625rem;
-    margin-left: 38.75rem;
 }
 
 /*CSS formulario*/
-.formulario {
+.form--aplique {
+    display: grid;
+    grid-template-areas: 
+    "nombre"
+    "mail"
+    "estudios"
+    "experiencia"
+    "botones";
+    grid-template-rows: 100px 100px 1fr 1fr 100px;
+    grid-template-columns: 1fr;
     margin: .625rem 1.25rem;
 }
 
-.formulario p {
+.form__container--info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__container--col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form__opcion {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.estudios {
+    grid-area: estudios;
+}
+
+.experiencia {
+    grid-area: experiencia;
+}
+
+.botones {
+    grid-area: botones;
+}
+
+.form p {
     margin: .3125rem 0;
 }
 
-.formulario__casilla {
-    position: relative;
-    bottom: .125rem;
+.form__casilla {
     font-size: .9375rem;
 }
 
-.formulario__label {
-    display: inline-block;
+.form__label {
     padding: .625rem 0;
 }
 
-.formulario__radio, .formulario__checkbox {
+.form__radio, .form__checkbox {
     margin-left: 1.25rem;
 }
 
-.formulario__label--radio {
-    display: inline-block;
+.form__label--radio {
     padding: .1875rem 0;
 }
 
-.formulario__label--checkbox {
-    display: inline-block;
+.form__label--checkbox {
     padding: .3125rem 0;
 }
 
-.formulario__marca {
+.form__marca {
     font-size: .9375rem;
 }
 
-.formulario__descripcion {
+.form__descripcion {
     margin: .3125rem 0;
     margin-left: 1.875rem;
 }
 
-.formulario__btn {
-    padding: .3125rem;
-    margin-left: 36.875rem;
+.form__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
@@ -642,7 +691,20 @@ nav {
         height: 13.125rem;
         margin: 0;
     }
+
+    /*Aplique Formulario*/
+    .form__container--info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form__container--col p{
+        align-self: center;
+    }
     
+    .btn {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 376px) {
