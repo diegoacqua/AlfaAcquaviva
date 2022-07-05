@@ -54,91 +54,93 @@
           Contanos de tu problema para poder ayudarte
         </h3>
         <!--form de contacto de cliente-->
-        <form class="formulario" action="" method="get" enctype="">
-          <label class="formulario__label" for="nombre">Nombre completo:</label>
-          <input
-            class="formulario__casilla"
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre y apellido"
-          />
-          <br />
-          <label class="formulario__label" for="email"
-            >Dirección de email:
-          </label>
-          <input
-            class="formulario__casilla"
-            type="email"
-            name="email"
-            id="email"
-          />
-          <p>Dispositivo averiado:</p>
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="dispositivo"
-            id="heladera"
-          />
-          <label class="formulario__label--radio" for="heladera"
-            >Heladera
-          </label>
-          <br />
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="dispositivo"
-            id="lavarropas"
-          />
-          <label class="formulario__label--radio" for="lavarropas"
-            >Lavarropas
-          </label>
-          <br />
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="dispositivo"
-            id="secarropas"
-          />
-          <label class="formulario__label--radio" for="secarropas"
-            >Secarropas
-          </label>
-          <br />
-          <input
-            class="formulario__radio"
-            type="radio"
-            name="dispositivo"
-            id="lavavajillas"
-          />
-          <label class="formulario__label--radio" for="lavavajillas"
-            >Lavavajillas
-          </label>
-          <br />
-          <label class="formulario__label" for="marcas"
-            >Marca del electrodoméstico:
-          </label>
-          <select class="formulario__marca" name="marcas" id="marcas">
-            <option value="samsung">Samsung</option>
-            <option value="lg">Lg</option>
-            <option value="generalElectric">General Electric</option>
-            <option value="whirpool">Whirpool</option>
-            <option value="drean">Drean</option>
-            <option value="longvie">Longvie</option>
-            <option value="otro">Otro</option>
-          </select>
-          <br />
-          <label class="formulario__label" for="descripcion"
-            >Describinos tu problema:
-          </label>
-          <br />
-          <textarea
-            class="formulario__descripcion"
-            name="descripcion"
-            id="descripcion"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <div class="formulario__btn">
+        <form class="form--contacto" action="" method="get" enctype="">
+          <div class="form__container--info nombre">
+            <label class="form__label" for="nombre">Nombre completo:</label>
+            <input
+              class="form__casilla"
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre y apellido"
+            />
+          </div>
+          <div class="form__container--info mail">
+            <label class="form__label" for="email">Dirección de email: </label>
+            <input class="form__casilla" type="email" name="email" id="email" />
+          </div>
+          <div class="form__container--col dispositivo">
+            <p>Dispositivo averiado:</p>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="dispositivo"
+                id="heladera"
+              />
+              <label class="form__label--radio" for="heladera">Heladera </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="dispositivo"
+                id="lavarropas"
+              />
+              <label class="form__label--radio" for="lavarropas"
+                >Lavarropas
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="dispositivo"
+                id="secarropas"
+              />
+              <label class="form__label--radio" for="secarropas"
+                >Secarropas
+              </label>
+            </div>
+            <div class="form__opcion">
+              <input
+                class="form__radio"
+                type="radio"
+                name="dispositivo"
+                id="lavavajillas"
+              />
+              <label class="form__label--radio" for="lavavajillas"
+                >Lavavajillas
+              </label>
+            </div>
+          </div>
+          <div class="form__container--info marca">
+            <label class="form__label" for="marcas"
+              >Marca del electrodoméstico:
+            </label>
+            <select class="form__marca" name="marcas" id="marcas">
+              <option value="samsung">Samsung</option>
+              <option value="lg">Lg</option>
+              <option value="generalElectric">General Electric</option>
+              <option value="whirpool">Whirpool</option>
+              <option value="drean">Drean</option>
+              <option value="longvie">Longvie</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form__container--col problema">
+            <label class="form__label" for="descripcion"
+              >Describinos tu problema:
+            </label>
+            <textarea
+              class="form__descripcion"
+              name="descripcion"
+              id="descripcion"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form__btn botones">
             <input class="btn" type="submit" value="Enviar" />
             <input class="btn" type="reset" value="Borrar" />
           </div>

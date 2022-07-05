@@ -1,0 +1,130 @@
+/*Aplique*/
+#aplicar {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    background-color: #b13b527a;
+    border: .3125rem solid;
+    border-style: inset;
+
+    .aplicar__titulo {
+        display: flex;
+        justify-content: center;
+        padding: .625rem 0;
+        margin-bottom: .625rem;
+    }
+
+    .aplicar__subtitulo {
+        display: flex;
+        justify-content: center;
+        padding:0 0 .625rem .625rem;
+    }
+}
+
+.form--aplique {
+    display: grid;
+    grid-template-areas: 
+    "nombre"
+    "mail"
+    "estudios"
+    "experiencia"
+    "botones";
+    grid-template-rows: 100px 100px 1fr 1fr 100px;
+    grid-template-columns: 1fr;
+    margin: .625rem 1.25rem;
+
+    .nombre {
+        grid-area: nombre;
+    }
+    
+    .mail {
+        grid-area: mail;
+    }
+    
+    .estudios {
+        grid-area: estudios;
+    }
+    
+    .experiencia {
+        grid-area: experiencia;
+    }
+    
+    .botones {
+        grid-area: botones;
+    }
+
+    .form__container--info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .form__container--col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .form__opcion {
+            display: flex;
+            flex-direction: row;
+            margin: 12px 0;
+
+            .form__radio, .form__checkbox {
+                margin-left: 1.25rem;
+            }
+            
+            .form__label--radio {
+                padding: .1875rem 0;
+            }
+            
+            .form__label--checkbox {
+                padding: .3125rem 0;
+            }
+        }
+
+        
+    }
+
+    .form p {
+        margin: .3125rem 0;
+    }
+    
+    .form__casilla {
+        font-size: .9375rem;
+    }
+    
+    .form__label {
+        padding: .625rem 0;
+    }
+
+    .form__btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            font-size: 1.25rem;
+            padding: 0 1.25rem;
+            border-radius: .9375rem;
+            border: .125rem solid midnightblue;
+            margin: 0 1.5625rem;
+            transition: background-color 0.5s, color 0.5s;
+
+            &:hover {
+                background-color: midnightblue;
+                color: white;
+            }
+        }
+    }
+
+    
+
+    
+}
+
+
+
+
+
